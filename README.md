@@ -76,5 +76,8 @@ sudo systemctl disable openhab-command-proxy.service
 
 A simple use case would be to scan QR codes that can be used to operate devices. A commercially available QR code scanner suggests that if a URL is recognised, it can be opened in the browser. However, in order to perform a sendCommand on an item in openHAB, a POST request must be performed, whereas opening a URL in the browser is only a GET request.
 
-:-------------------------:|:-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab.png)  |  ![](https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab2.png)  |  ![](https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab3.png)
+<div>
+    <img src="https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab.png" alt="QR 1" width="300" />
+    <img src="https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab2.png" alt="QR 2" width="300" />
+    <img src="https://raw.githubusercontent.com/Michdo93/test2/main/qr_scan_openhab3.png" alt="QR 3" width="300" />
+</div>
