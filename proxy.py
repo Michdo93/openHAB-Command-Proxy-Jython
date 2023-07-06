@@ -1,3 +1,4 @@
+import time
 import core
 from core.rules import rule
 from core.triggers import when
