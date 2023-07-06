@@ -17,17 +17,12 @@ class OpenHABCommandProxy:
     def handle_item_command(self, item_name):
         command = request.args.get('data')
 
-        events.sendCommand(item_name, command)
-
-        time.sleep(1)
-
-        # Aktuellen Zustand abrufen
-        current_state = ir.getItem(item_name).state
-
-        if current_state == command:
-            return 'Command received and processed', 200
-        else:
-            return 'Error: Command not processed', 500
+        try:
+            events.sendCommand(item_name, command)
+            time.sleep(1)
+            return 'Command sent successfully', 200
+        except:
+            return 'Error: Failed to send command', 500
 
     def run(self):
         self.app.run(host=self.ip_address, port=self.port)
