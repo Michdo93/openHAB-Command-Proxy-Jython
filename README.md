@@ -16,7 +16,7 @@ sudo -u openhab python3 -m pip install flask --user
 Then you can download the python script with:
 
 ```
-git clone https://github.com/Michdo93/openHAB-Command-Proxy-Jython.git $OH_CONF/automation/jsr223/python/community
+git clone https://github.com/Michdo93/openHAB-Command-Proxy-Jython.git $OH_CONF/automation/jsr223/python/community/openHAB-Command-Proxy-Jython
 ```
 
 Before you run the script, please make it executable:
